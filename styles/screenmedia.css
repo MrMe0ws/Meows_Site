@@ -1,0 +1,199 @@
+/* Медиа-запрос для разрешения экрана 470px */
+@media (max-width: 470px) {
+  body {
+    font-size: 14px; /* Установка шрифта для текста на экранах 470px */
+  }
+
+  header {
+    justify-content: space-between;
+    gap: 0;
+    padding: 5px; /* Уменьшение отступов заголовка для компактности на маленьких экранах */
+  }
+
+  .social-links ul li a {
+    height: auto; /* Поддержание пропорций для иконок */
+  }
+
+  .dark {
+    width: 30px; /* Установка ширины иконок для класса dark */
+    height: auto; /* Поддержание пропорций для иконок */
+  }
+
+  div.avatar img {
+    width: 40px; /* Установка желаемой ширины логотипа */
+    height: auto; /* Поддержание пропорций логотипа */
+  }
+
+  .logo h1 {
+    font-size: 30px; /* Уменьшение размера шрифта заголовка h1 */
+  }
+
+  .social-links img {
+    width: 20px; /* Установка ширины изображений социальных ссылок */
+  }
+
+  .image-book {
+    float: none; /* Убрана обтяжка элемента */
+    display: flex; /* Использование flexbox для центрирования */
+    justify-content: center; /* Центрирование содержимого */
+    padding-bottom: 10px; /* Добавление отступа снизу */
+    flex-wrap: wrap;
+  }
+
+  .modal-content {
+    width: auto; /* Автоматическая ширина контента модального окна */
+    height: auto; /* Автоматическая высота контента модального окна */
+  }
+
+  .modal-content h2 {
+    text-align: center;
+  }
+
+  .modal-content img {
+    margin: 0;
+  }
+
+  .cat-albom {
+    justify-content: center;
+  }
+
+  .cat-image img {
+    width: 280px;
+  }
+
+  .section {
+    padding: 20px 20px;
+  }
+
+  .cat-link img{
+  max-width: 40px;
+}
+}
+
+/* Медиа-запрос для разрешения экрана 744px */
+@media (min-width: 471px) and (max-width: 744px) {
+  body {
+    font-size: 14px; /* Установка шрифта для текста на экранах между 470px и 744px */
+  }
+
+  header {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .social-links img {
+    width: 20px; /* Установка ширины изображений социальных ссылок */
+  }
+
+  .image-book {
+    float: none; /* Убрана обтяжка элемента */
+    display: flex; /* Использование flexbox для центрирования */
+    justify-content: center; /* Центрирование содержимого */
+    padding-bottom: 10px; /* Добавление отступа снизу */
+  }
+
+  .modal-content {
+    width: auto; /* Автоматическая ширина контента модального окна */
+    height: auto; /* Автоматическая высота контента модального окна */
+  }
+
+  .modal-content h2 {
+    text-align: center;
+  }
+
+  .modal-content img {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 40px; /* Уменьшение размера шрифта заголовка h1 */
+  }
+
+  .cat-albom {
+    justify-content: center;
+  }
+
+  .cat-image img {
+    width: 300px;
+  }
+
+  .section {
+    padding: 20px 20px;
+  }
+
+  div.avatar img {
+    width: 50px; /* Установка желаемой ширины логотипа */
+    height: auto; /* Поддержание пропорций логотипа */
+  }
+}
+
+/* Для разрешения 744px И ВЫШЕ */
+@media (min-width: 745px) and (max-width: 1023px) {
+  .social-links ul li a {
+    width: 60px; /* Установка ширины иконок социальных сетей для больших экранов */
+    height: auto; /* Поддержание пропорций для иконок */
+  }
+
+  .social-links img {
+    width: 25px; /* Установка ширины изображений социальных ссылок */
+  }
+
+  .dark {
+    width: 35px; /* Установка ширины иконок для класса dark на больших экранах */
+    height: auto; /* Поддержание пропорций для иконок */
+  }
+
+div.avatar img {
+    width: 50px; /* Установка желаемой ширины логотипа */
+    height: auto; /* Поддержание пропорций логотипа */
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  div.avatar img {
+    width: 50px; /* Установка желаемой ширины логотипа */
+    height: auto; /* Поддержание пропорций логотипа */
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .social-links img {
+    width: 25px; /* Установка ширины изображений социальных ссылок */
+  }
+}
+
+
+@media (min-width: 1440px) {
+  div.avatar img {
+    width: 60px; /* Установка желаемой ширины логотипа */
+    height: auto; /* Поддержание пропорций логотипа */
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .social-links img {
+    width: 25px; /* Установка ширины изображений социальных ссылок */
+  }
+}
+
+@media (max-width: 1016px) {
+  .section-test {
+
+}
+
+#projects {
+  width: 100%;
+}
+
+#experience {
+  width: 100%;
+}
+}

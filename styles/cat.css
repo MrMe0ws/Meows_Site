@@ -1,0 +1,215 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0; /* Убирает стандартные отступы у тела документа */
+  padding: 0; /* Убирает стандартные отступы у тела документа */
+  font-family: Arial, sans-serif; /* Установка шрифта Arial и запасного шрифта sans-serif */
+  font-size: 14px; /* Установка базового размера шрифта */
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+  height: 100%;
+}
+
+.boxed-text {
+  border: 2px solid currentColor; /* Установка рамки с текущим цветом текста */
+  padding: 15px; /* Установка внутреннего отступа */
+  margin-top: 20px; /* Установка отступа сверху */
+}
+
+header {
+  display: flex; /* Использование flexbox для размещения элементов в заголовке */
+  justify-content: center; /* Равномерное распределение пространства между элементами заголовка */
+  align-items: center; /* Вертикальное выравнивание элементов по центру */
+  padding: 5px; /* Внутренние отступы заголовка */
+  color: #fff; /* Цвет текста в заголовке */
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+  gap: 50px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  overflow: visible;
+  width: 100%;
+  z-index: 99;
+}
+
+.head-conteiner {
+  display: flex; /* Использование flexbox для размещения элементов в заголовке */
+  justify-content: space-between; /* Равномерное распределение пространства между элементами заголовка */
+  align-items: center; /* Вертикальное выравнивание элементов по центру */
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.link a {
+  display: flex;
+}
+
+.header-logo {
+  display: flex;
+}
+
+#theme {
+  display: flex; /* Использование flexbox для расположения элементов управления темой */
+  flex-direction: row-reverse; /* Размещение элементов в обратном порядке по оси X */
+  float: right; /* Установка плавающего элемента, чтобы он был справа */
+}
+
+.wrapper {
+  min-height: 100%;
+  background-color: #fbfbfb;
+  max-width: auto; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера по горизонтали */
+  position: relative; /* Установка относительного позиционирования для дочерних элементов */
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration); /* Плавный переход фона и цвета при изменении */
+}
+
+div.avatar img {
+  width: 80px; /* Ширина изображения аватара */
+  height: auto; /* Автоматическая высота для пропорционального отображения */
+  border-radius: 50%; /* Круглая форма изображения */
+  margin-right: 15px; /* Отступ справа от изображения */
+}
+
+div.avatar {
+  margin: 0 10px;
+  display: flex; /* Использование flexbox для отображения аватара и его текстового содержимого */
+  align-items: center; /* Вертикальное выравнивание элементов по центру */
+}
+
+.social-links {
+  display: flex; /* Использование flexbox для отображения ссылок на социальные сети */
+  list-style-type: none; /* Убирает маркеры из списка */
+  margin: 5px; /* Отступы у социального списка */
+  padding: 5px; /* Внутренние отступы у социального списка */
+  gap: 5px; /* Промежуток между элементами списка */
+}
+
+.social-links ul {
+  list-style-type: none; /* Убирает маркеры из вложенных списков */
+  margin: 0; /* Убирает отступы */
+  padding: 0; /* Убирает внутренние отступы */
+}
+
+.section {
+  border: none; /* Установка рамки серого цвета */
+  padding: 20px; /* Внутренние отступы секции */
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 9px; /* Отступ снизу для разделения с соседними элементами */
+  border-radius: 15px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+a {
+  text-decoration: none; /* Убирает подчеркивание у ссылок */
+}
+
+a:hover {
+  opacity: 0.6; /* Уменьшает непрозрачность ссылок при наведении */
+}
+
+h1 {
+  margin: 0; /* Убирает отступы у заголовка hover */
+  filter: drop-shadow(0 0 0.75rem #f3f3f375);
+  text-decoration: none; /* Убираем подчеркивание текста логотипа */
+  animation: flicker 5s infinite; /* Применение анимации к логотипу */
+}
+
+nav ul li {
+  margin-right: 10px; /* Отступ справа для пунктов навигации */
+  display: inline; /* Отображение пунктов как строчные элементы */
+}
+
+footer {
+  background-color: #ffffff; /* Темный фон для подвала */
+  color: #0f120e; /* Цвет текста в подвале */
+  padding: 5px; /* Внутренние отступы подвала */
+  text-align: center; /* Выравнивание содержимого по центру */
+  border-radius: 0;
+  margin: 0 auto;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex; /* Использование flexbox для размещения логотипа */
+  align-items: center; /* Вертикальное выравнивание логотипа */
+  justify-content: center; /* Центрирование логотипа */
+  /* font-family: pixel nes;  Закомментированный шрифт для логотипа */
+  font-size: 30px; /* Размер шрифта для логотипа */
+  color: #f2f2f2; /* Цвет текста логотипа */
+}
+
+/* анимация лого */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  } /* Полная непрозрачность */
+  50% {
+    opacity: 0.2;
+  } /* Уменьшение непрозрачности до 20% */
+}
+
+/* Анимации социальных сетей */
+.avatar img:hover {
+  opacity: 0.6; /* Уменьшает непрозрачность изображения аватара при наведении */
+}
+
+.telegram:hover,
+.gmail:hover,
+.steam:hover {
+  opacity: 0.6; /* Уменьшает непрозрачность ссылок на социальные сети при наведении */
+}
+
+/* Анимация темы */
+.switch:hover {
+  opacity: 0.6; /* Уменьшает непрозрачность элемента с классом dark при наведении */
+}
+
+.book {
+  display: flex; /* Использование flexbox для размещения книги */
+  flex-direction: row; /* Расположение элементов в строку */
+  flex-wrap: wrap; /* Перенос элементов на новую строку при необходимости */
+}
+
+.book button {
+  font-weight: 600;
+  width: auto; /* Автоматическая ширина кнопки */
+  background-color: #2a2b2a; /* Фон кнопки */
+  border: none; /* Убирает рамку кнопки */
+  border-radius: 15px; /* Углы кнопки становятся округлыми */
+  padding: 10px; /* Внутренние отступы кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  font-size: 16px; /* Размер шрифта для текста кнопки */
+}
+
+.book button:hover {
+  opacity: 0.8; /* Уменьшает непрозрачность кнопки при наведении */
+}
+
+.cat-albom {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.cat-image {
+  text-align: center;
+}
+
+.cat-image img {
+  width: 400px;
+  height: auto;
+  display: flex;
+  border-radius: 15px;
+  padding-bottom: 5px;
+}
