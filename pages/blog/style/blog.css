@@ -1,0 +1,184 @@
+body {
+  background-color: var(--main-color);
+}
+
+.blog__container {
+  display: block;
+
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.theme__btn {
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.blog__border-line {
+  border-right: 2px solid rgb(79 99 84);
+  height: 1.2em;
+}
+
+.blog__card {
+  position: relative;
+  background-color: var(--section-color);
+  border-radius: 1.5rem;
+  padding: 30px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.blog__card:hover {
+  transform: scale(1.015);
+}
+
+.blog__card-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  color: var(--base-color-black);
+}
+
+.blog__img {
+  fill: var(--H-color);
+}
+
+.blog__card-author,
+.blog__card-date {
+  display: flex;
+  align-items: center;
+}
+
+.blog__card-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.blog__card-title {
+  font-weight: bold;
+  color: var(H-color);
+  font-size: 1.8em;
+}
+
+.blog__card-text {
+  color: var(--base-color-black);
+  font-size: 20px;
+  margin: 0.4em 0;
+}
+
+.blog__alco {
+  width: fit-content;
+  position: absolute;
+  right: 30px;
+
+  & span {
+    padding: 10px 0;
+  }
+}
+
+
+
+
+/* POSTS */
+
+.post {
+  max-width: 80rem;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.post__title {
+  font-size: 3em;
+  margin: 20px 0 0 0;
+}
+
+.post__container {
+  max-width: 80ch;
+}
+
+.post__card-header {
+  padding: 15px 0;
+  font-size: 1.3em;
+}
+
+.post__img {
+  border-radius: 30%;
+  height: 150px;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+/* АЛКОГОЛЬ */
+.post__alco {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  padding: 25px;
+  color: rgb(227, 235, 231);
+  border-radius: 15px;
+  background-image: url(../img/beer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken; /* Затемняем фон */
+  background-color: rgba(0, 0, 0, 0.6); /* Добавляем затемнение */
+}
+
+.alco__time,
+.alco__free {
+  font-size: 20px;
+}
+
+/* hljs */
+.detailss {
+  color: var(--base-color-black);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--btn-color);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s;
+  list-style-type: none;
+}
+
+.hljs {
+  margin: 0;
+  transition: all 0.3s;
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 15px;
+  overflow-x: auto;
+}
+
+
+.post-update1 {
+  & img, video {
+    border-radius: 15px;
+  }
+}

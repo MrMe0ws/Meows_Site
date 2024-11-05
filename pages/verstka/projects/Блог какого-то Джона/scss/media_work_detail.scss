@@ -1,0 +1,185 @@
+@media (max-width: 910px) {
+
+    .header_conteiner {
+
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+    }
+
+
+    .nav_mobile {
+        margin: 10px 10px;
+    }
+
+    .header_borders {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 30px;
+
+        cursor: pointer;
+
+        .header_border {
+            border-bottom: 2px solid #21243D;
+        }
+    }
+
+    // 
+
+    /* Выпадающий контейнер */
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    /* Кнопка выпадающего списка */
+    .dropdown .dropbtn {
+        background-color: inherit;
+        font-family: inherit;
+        /* Важно для вертикального выравнивания на мобильных телефонах */
+        margin: 0;
+        /* Важно для вертикального выравнивания на мобильных телефонах */
+    }
+
+    /* Добавить красный цвет фона для ссылок на навигационную панель при наведении курсора */
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgba(238, 238, 238, 0.418);
+        border-radius: 10%;
+        transition: 0.5s;
+    }
+
+    /* Выпадающее содержимое (скрыто по умолчанию) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        max-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav_header {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+
+
+        .header_link {
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: right;
+        }
+    }
+
+    /* Ссылки внутри выпадающего списка */
+    .dropdown-content a {
+        float: none;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Добавить серый цвет фона для выпадающих ссылок при наведении курсора */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+
+    }
+
+    /* Показать выпадающее меню при наведении курсора */
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+
+    // 
+
+    .main {
+        margin-top: 80px;
+    }
+
+    .main_conteiner {
+        width: auto;
+        padding: 0 18px;
+        
+    }
+
+        .img {
+            margin: 25px 0;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+    
+    
+            img {
+                max-width: 340px;
+                max-height: 256px;
+                border-radius: 5px;
+            }
+    
+        }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .section_title {
+
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .date,
+    .date_one {
+        font-size: 16px;
+    }
+
+
+ 
+
+    .date_border,
+    .data_name {
+        font-size: 16px;
+    }
+
+    .footer_conteiner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
+        padding: 50px 70px;
+
+        .copyright {
+            color: #21243D;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+    }
+
+    .social-links {
+        display: flex;
+        gap: 35px;
+        margin-bottom: 25px;
+
+        .link:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    .title {
+        margin-left: 0px;
+    }
+}

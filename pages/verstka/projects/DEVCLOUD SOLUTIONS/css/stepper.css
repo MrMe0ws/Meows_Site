@@ -1,0 +1,48 @@
+.process-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-slider__container {
+    display: flex;
+    gap: 30px;
+    
+    
+}
+
+.process-slider__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.process-slider__button {
+
+    border: 1px solid black;
+    cursor: pointer;
+    width: 93px;
+    height: 55px;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.process-slider__button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.process-slider__content {
+    display: flex;
+    justify-content: center;
+}
+
+.process-slider__slide {
+    display: none;
+    gap: 20px;
+}
+
+.process-slider__slide.active {
+    display: flex;
+}

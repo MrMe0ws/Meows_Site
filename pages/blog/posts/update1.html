@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(176 241 194)">
+    <title>meows BLOG | </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../style/blog.css">
+    <link rel="stylesheet" href="../../../css/media.css">
+    <link rel="icon" href="../../../img/icon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/">
+                <div class="header__logotype">
+                    <!-- <img src="../../../img/header/logo.png" alt="header-logo" class="header__logo"> -->
+                    <h2 class="header__logo-text">Meows</h2>
+                </div>
+            </a>
+
+            <div class="header__right">
+                <label class="switch">
+                    <input class="theme__btn" id="theme-toggle" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <nav class="navbar header__navbar">
+                    <div class="navbar__dropdown header__dropdown">
+                        <input type="checkbox" id="dropdown-toggle"
+                            class="navbar__dropdown-checkbox header__dropdown-checkbox">
+                        <label for="dropdown-toggle" class="navbar__burger header__burger">
+                            <svg class="navbar__img header__navbar-img" width="34" height="34" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </label>
+                        <ul class="navbar__content header__content">
+                            <li class="navbar__list header__list">
+                                <a href="/" class="navbar__link header__link">Домой</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../../verstka/cat" class="navbar__link header__link">Кот</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../../verstka/verstka" class="navbar__link header__link">Вёрстка</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../../blog/blog" class="navbar__link header__link navbar__active">Блог</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../../verstka/top10" class="header__link header__link_noactive"
+                                    data-message="Этот раздел в разработке ❗">Мой топ</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../../verstka/donat" class="header__link header__link_noactive"
+                                    data-message="Этот раздел в разработке ❗">Донаты</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="#socialLinks" class="navbar__link header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="run-cat header__run-cat">
+                    <img src="../../../img/header/cat.gif" alt="cat" id="catImage" style="cursor: pointer;">
+                    <audio id="catSound" src="../../audio/kipshu-prrmeo.mp3"></audio>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- popup линк хеадер инфо -->
+        <div id="navbar__dropdown_link" class="navbar__dropdown_link" style="display: none;">Этот раздел в разработке
+        </div>
+
+        <section class="post blog__container px-4">
+
+            <h2 class="post__title">Обновление на сайте 1.0</h2>
+            <div class="post__container post-update1">
+                <div class="blog__card-header gap-4 post__card-header">
+                    <span class="blog__card-author flex gap-2">
+                        <svg class="blog__img" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                            width="24px" fill="#223527">
+                            <path
+                                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                        </svg>
+                        Meows
+                    </span>
+
+                    <span class="blog__border-line"></span>
+
+                    <span class="blog__card-date flex gap-2">
+                        <svg class="blog__img" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                            width="24px" fill="#223527">
+                            <path
+                                d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
+                        </svg>
+                        Окт 24, 2024
+                    </span>
+                </div>
+
+                <p>Я активно занимаюсь своим сайтом, добавляю какие-то штуки, какие-то убираю. В течение недели накидал
+                    всякого разного,
+                    пойдем по пунктам:</p>
+
+                <ol>
+                    <li>Добавил страницу <strong>404</strong>. Теперь если пользователь попадает на несуществующую
+                        страницу, его будет
+                        перенаправлять на стр.
+                        <strong>404</strong>. Можете попробовать перейти на <a class="footer__link" href="https://me0ws.ru/test">неверный адрес</a> 🙂 
+                    </li>
+                    <br><br>
+                    <li>
+                        Убрал в конце ссылок сайта <code
+                            style="color: var(--base-color-black); background-color: var(--border-color);">.html</code>.
+                        Теперь
+                        страницы открываются корректно, как у всех🔥<br> Пример:
+                        <br> <b>было</b> -
+                        <img src="../img/update1/html.png" alt="html">
+                        <br> <b>cтало</b> -
+                        <img src="../img/update1/nohtml.png" alt="nohtml">
+                    </li>
+
+                    <ul>
+                        <br>
+                        Эти два пункта в большой степени относятся к настройке Apache2 на сервере, так как я большую
+                        часть
+                        времени сидел в SSH и
+                        ковырялся в конфигурациях. А саму стр. 404 сделал очень быстро. Качаю понемногу и свои
+                        сисадминские
+                        навыки)) <br>
+
+                        <img src="../img/update1/404.png" width="300px" alt="404">
+                    </ul>
+
+                    <br><br>
+                    <li>
+                        Добавил счётчик посетителей моего сайта. Он считает уникальных посетителей по
+                        <strong>IP-адресу</strong> и общее
+                        количество посещений. Я
+                        искал какое-то простое решение, но всё указывало на необходимость создания базы данных или
+                        подключения
+                        PHP, чего я
+                        делать не хотел.
+                        Пока рановато, считаю, ведь делаю упор на JS! <br> Решение нашлось, хоть и костыльное, но всё
+                        же. Я
+                        подключил
+                        Google-таблицу
+                        и настроил скрипт, который записывает нужные данные в таблицу каждый раз, когда кто-то заходит
+                        на сайт. <br>
+                        Проверяется
+                        IP-адрес, и если он новый — данные записываются в таблицу, добавляется +1 к уникальным
+                        пользователям. А
+                        посещения
+                        фиксируются каждый раз, как кто-либо заходит на сайт. <br><br>
+                        <img src="../img/update1/stats.png" alt="stats">
+                    </li>
+                    <br><br>
+                    <li>
+                        Обновил весь дизайн сайта: поменял шрифты, их размеры, адаптив под мобильные устройства,
+                        основные цвета,
+                        общую цветовую
+                        палитру, расположение элементов. <br> Все мелочи, но стало лучше, лично на мой вкус =) Мой
+                        любимый
+                        цвет -
+                        <strong>все оттенки
+                            зелёного</strong>, поэтому основной акцент делал на него. <br><br>
+                        <b>Старый дизайн:</b>
+                        <img src="../img/update1/olddesign.png" alt="">
+                        <br><br>
+                        <b>Новый дизайн:</b>
+                        <img src="../img/update1/newdesign.png" alt="">
+                        <br><br>
+
+                        <b>Старый футер:</b>
+                        <img src="../img/update1/footer.png" alt="">
+                        <br><br>
+                        <b>Новый футер:</b>
+                        <img src="../img/update1/footer_new.png" alt="">
+
+                    </li>
+                    <br><br>
+                    <li>
+                        Также переделал все цвета под CSS-переменные (var), чтобы я смог добавить тёмную тему.
+                        Собственно, её я
+                        и добавил -
+                        теперь можно переключаться между светлой и тёмной сторонами :) При этом данные сохранятся даже
+                        после
+                        выхода с сайта, и
+                        при следующем заходе тема останется<div class="br"></div> Сделал это через Local Storage.
+                        
+                        <br><br>
+                        <video controls width="100%">
+                            <source src="../img/update1/theme.mp4" type="video/mp4">
+                        </video>
+                    </li>
+                    <br><br>
+                    <li>
+                        Исправил кучу мелких багов и вещей, которые бросались в глаза, но не заслуживают внимания на
+                        отдельный
+                        пост, максимум -
+                        отдельный пункт в списке🗑️
+                    </li>
+
+
+                </ol>
+                <br><br>
+                <p>В планах дальше качать скилл по JS. Это сейчас главное! Идёт очень тяжело.</p>
+                <div> Это я учу JS</div>
+                <img src="../img/update1/rublev.png" alt="rublev" width="80%">
+                <br><br>
+                <div>Я через год если буду дальше учить JS</div>
+                <img src="../img/update1/rublev_uspeh.png" alt="rublev" width="80%">
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Подвал -->
+    <footer class="footer" id="footer">
+        <div class="container footer_container">
+            <div class="footer__left">
+                <a href="/">
+                    <div class="header__logotype footer__logo">
+                        <h2 class="header__logo-text">Meows</h2>
+                    </div>
+                </a>
+                <div class="footer__c">
+                    &copy; 2024 Meows
+                </div>
+                <section class="stats-users" id="statsUsers">
+                    <p><span id="stats-users__visit-count">Сайт посетили: </span></p>
+                    <p><span id="stats-users__unique-users">Уникальных посетителей: </span></p>
+                </section>
+            </div>
+
+            <div class="footer__right">
+                <ul class="footer__social-links">
+                    <span class="footer__title">Ссылки</span>
+                    <li class="footer__link">
+                        <a href="../../../pages/blog/blog"">Блог</a>
+                                            </li>
+                                            <li class=" footer__link">
+                            <a href="../../../pages/verstka/verstka">Вёртска</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="../../../pages/cat/cat"">Кот</a>
+                                            </li>
+                                        </ul>
+                        
+                                        <ul class=" footer__social-links" id="socialLinks">
+                            <span class="footer__title">Контакты</span>
+                    <li class="footer__link">
+                        <a href="https://t.me/MrMeows" target="_blank">Telegram</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="mailto:chingizgc@gmail.com">Gmail</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://steamcommunity.com/id/chizx/" target="_blank">Steam</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/stats_users.js"></script>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../js/link__dropdown.js"></script>
+</body>
+
+</html>

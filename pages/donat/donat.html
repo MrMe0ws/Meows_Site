@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(176 241 194)">
+    <title>meows DONATE | </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/media.css">
+    <link rel="icon" href="../../img/icon.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="/">
+                <div class="header__logotype">
+                    <!-- <img src="../../img/header/logo.png" alt="header-logo" class="header__logo"> -->
+                    <h2 class="header__logo-text">Meows</h2>
+                </div>
+            </a>
+
+            <div class="header__right">
+                <nav class="navbar header__navbar">
+                    <div class="navbar__dropdown header__dropdown">
+                        <input type="checkbox" id="dropdown-toggle"
+                            class="navbar__dropdown-checkbox header__dropdown-checkbox">
+                        <label for="dropdown-toggle" class="navbar__burger header__burger">
+                            <img src="../../img/header/burger-menu-svgrepo-com.svg" alt="Меню"
+                                class="navbar__img header__navbar-img">
+                        </label>
+                        <ul class="navbar__content header__content">
+                            <li class="navbar__list header__list">
+                                <a href="/" class="navbar__link header__link ">Домой</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../cat/cat" class="navbar__link header__link">Кот</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../verstka/verstka" class="navbar__link header__link">Вёрстка</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../blog/blog" class="navbar__link header__link">Блог</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../top/top10" class="navbar__link header__link">Топ 10</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../donat/donat" class="navbar__link header__link navbar__active">Донаты</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="#footer" class="navbar__link header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="run-cat header__run-cat">
+                    <img src="../../img/header/cat.gif" alt="cat" id="catImage" style="cursor: pointer;">
+                    <audio id="catSound" src="../../audio/kipshu-prrmeo.mp3"></audio>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="section">
+                <h2>Донаты автору </h2>
+
+                <p class="donat__text">В разработке. Пока что дайте деняг сюда:<a class="telegram"
+                        href="https://t.me/MrMeows" target="_blank">
+                        <img src="../../img/footer/telegram.png" style="width: 40px;"></a></p>
+
+                <div class="donat__message">
+                    <div class="tooltip">Дай деняг браток..</div>
+                </div>
+
+            </section>
+
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer" id="footer">
+        <div class="container footer_container">
+            <div class="footer__left">
+                <a href="/">
+                    <div class="header__logotype footer__logo">
+                        <h2 class="header__logo-text">Meows</h2>
+                    </div>
+                </a>
+                <div class="footer__c">
+                    &copy; 2024 Meows
+                </div>
+                <section class="stats-users" id="statsUsers">
+                    <p><span id="stats-users__visit-count">Сайт посетили: </span></p>
+                    <p><span id="stats-users__unique-users">Уникальных посетителей: </span></p>
+                </section>
+            </div>
+
+            <div class="footer__right">
+                <ul class="footer__social-links">
+                    <span class="footer__title">Ссылки</span>
+                    <li class="footer__link">
+                        <a href="../../pages/blog/blog"">Блог</a>
+                                                    </li>
+                                                    <li class=" footer__link">
+                            <a href="../../pages/verstka/verstka">Вёртска</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="../../pages/cat/cat"">Кот</a>
+                                                    </li>
+                                                </ul>
+                        
+                                        <ul class=" footer__social-links">
+                            <span class="footer__title">Контакты</span>
+                    <li class="footer__link">
+                        <a href="https://t.me/MrMeows" target="_blank">Telegram</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="mailto:chingizgc@gmail.com">Gmail</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://steamcommunity.com/id/chizx/" target="_blank">Steam</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../js/stats_users.js"></script>
+</body>
+
+</html>

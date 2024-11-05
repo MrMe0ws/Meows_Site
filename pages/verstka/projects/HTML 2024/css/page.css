@@ -1,0 +1,49 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 15px 40px;
+}
+
+.page__title {
+  margin-bottom: 25px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.page__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #555555;
+  max-width: 570px;
+  margin-bottom: 25px;
+}
+
+.page__img {
+  max-width: 100%;
+  margin: 40px 0;
+}
+.btnn {
+  width: 770px;
+    margin: 0 auto;
+    display: flex;
+}
+.btn-back-home {
+    color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 1.875rem;
+  background-color: #F1F1F1;
+}
+.btn-back-home::before {
+    content: url(../img/mebel/Vector.png);
+    margin-right: .6rem;
+    position: relative;
+    top: 1.5px; /* Сдвинет стрелку вниз */
+}

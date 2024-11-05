@@ -1,0 +1,32 @@
+@media (max-width: 600px) { 
+    .card-main img {
+  width: 80%;
+  height: 80%;
+  margin-top: 32px;
+  border-radius: 7px;
+}
+
+.card-main {
+ align-items: center;
+}
+
+.footer {
+  margin: 12px;
+}
+
+.text-footer {
+  padding-bottom: 7.5px;
+  color: #525f7f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.social-links-footer {
+  display: flex;
+}
+.social-links {
+  display: flex;
+  padding: 0px 8px;
+}
+}

@@ -1,0 +1,44 @@
+.slider {
+  position: relative;
+  padding: 0 20px; /* Добавляем отступы для стрелок */
+}
+
+.slider__wrapper {
+  overflow: hidden; /* Скрываем части слайдов, выходящие за рамки */
+}
+
+.slider__container {
+  display: flex;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.slider__slide {
+  min-width: 100%;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  position: relative; /* Добавляем relative для корректного позиционирования */
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10; /* Увеличиваем z-index, чтобы стрелки были выше остальных элементов */
+}
+
+.slider__arrow--left {
+  left: -20px;
+}
+
+.slider__arrow--right {
+  right: -20px;
+}
+
+

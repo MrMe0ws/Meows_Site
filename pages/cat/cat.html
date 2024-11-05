@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(176 241 194)">
+    <title>meows CAT | </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="./style/cat_image.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../cat/style/cat.css">
+    <link rel="stylesheet" href="../../css/media.css">
+    <link rel="icon" href="../../img/icon.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="/">
+                <div class="header__logotype">
+                    <!-- <img src="../../img/header/logo.png" alt="header-logo" class="header__logo"> -->
+                    <h2 class="header__logo-text">Meows</h2>
+                </div>
+            </a>
+
+            <div class="header__right">
+                <!-- Rounded switch -->
+                <label class="switch">
+                    <input class="theme__btn" id="theme-toggle" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <nav class="navbar header__navbar">
+                    <div class="navbar__dropdown header__dropdown">
+                        <input type="checkbox" id="dropdown-toggle"
+                            class="navbar__dropdown-checkbox header__dropdown-checkbox">
+                        <label for="dropdown-toggle" class="navbar__burger header__burger">
+                            <svg class="navbar__img header__navbar-img" width="34" height="34" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </label>
+                        <ul class="navbar__content header__content">
+                            <li class="navbar__list header__list">
+                                <a href="/" class="navbar__link header__link ">Домой</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../cat/cat" class="navbar__link header__link navbar__active">Кот</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../verstka/verstka" class="navbar__link header__link">Вёрстка</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="../blog/blog" class="navbar__link header__link">Блог</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="./pages/top/top10" class="header__link header__link_noactive"
+                                    data-message="Этот раздел в разработке ❗">Мой топ</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="./pages/donat/donat" class="header__link header__link_noactive"
+                                    data-message="Этот раздел в разработке ❗">Донаты</a>
+                            </li>
+                            <li class="navbar__list header__list">
+                                <a href="#socialLinks" class="navbar__link header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="run-cat header__run-cat">
+                    <img src="../../img/header/cat.gif" alt="cat" id="catImage" style="cursor: pointer;">
+                    <audio id="catSound" src="../../audio/kipshu-prrmeo.mp3"></audio>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- popup линк хеадер инфо -->
+        <div id="navbar__dropdown_link" class="navbar__dropdown_link" style="display: none;">Этот раздел в разработке
+        </div>
+        <div class="container cat__container">
+            <h1>Страница моего кота! <span class="hello">&#128075;</span> </h1>
+            <section>
+                <p class="cat__text"><strong>Ричард</strong> - настоящий мастер по поднятию настроения, и его неповторимый характер всегда удивляет! <br>
+                Он обожает играть, исследовать новые места и, конечно, наслаждаться долгими часами отдыха на солнечном окне.</p>
+            </section>
+
+            <section class="section__cat">
+                <div class="cat-albom">
+                    <!-- Изображения кота -->
+                    <img class="myImg" src="../cat/img/1.jpg" alt="">
+                    <img class="myImg" src="../cat/img/2.jpg" alt="SuperCat">
+                    <img class="myImg" src="../cat/img/3.jpg" alt="Котик 2">
+                    <img class="myImg" src="../cat/img/4.jpg" alt="Angel">
+                    <img class="myImg" src="../cat/img/5.jpg" alt="Чил">
+                    <img class="myImg" src="../cat/img/6.jpg" alt="Чил 2">
+                    <img class="myImg" src="../cat/img/7.jpg" alt="">
+                    <img class="myImg" src="../cat/img/8.jpg" alt="">
+                    <img class="myImg" src="../cat/img/9.jpg" alt="Гуляет зимой">
+                    <img class="myImg" src="../cat/img/10.jpg" alt="Гуляет летом">
+                    <img class="myImg" src="../cat/img/11.jpg" alt="Удивлён">
+                    <img class="myImg" src="../cat/img/12.jpg" alt="Добряк">
+                    <img class="myImg" src="../cat/img/13.jpg" alt="">
+                    <img class="myImg" src="../cat/img/14.jpg" alt="Искупался">
+                    <img class="myImg" src="../cat/img/15.jpg" alt="">
+                    <img class="myImg" src="../cat/img/16.jpg" alt="">
+                    <img class="myImg" src="../cat/img/17.jpg" alt="Заманчиво)))">
+                    <img class="myImg" src="../cat/img/18.jpg" alt="">
+                    <img class="myImg" src="../cat/img/19.jpg" alt="">
+
+                    <div id="myModal" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content-cat" id="img01">
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    <!-- CAT -->
+    <img src="../../img/main/young_cat.png" alt="Kitty:3" class="young-cat">
+    </main>
+    
+        <!-- Подвал -->
+        <footer class="footer" id="footer">
+            <div class="container footer_container">
+                <!-- KITTY -->
+                <img src="../../img/main/kitty.png" alt="Kitty:3" class="kitty">
+                <div class="footer__left">
+                    <a href="/">
+                        <div class="header__logotype footer__logo">
+                            <h2 class="header__logo-text">Meows</h2>
+                        </div>
+                    </a>
+                    <div class="footer__c">
+                        &copy; 2024 Meows
+                    </div>
+                    <section class="stats-users" id="statsUsers">
+                        <p><span id="stats-users__visit-count">Сайт посетили: </span></p>
+                        <p><span id="stats-users__unique-users">Уникальных посетителей: </span></p>
+                    </section>
+                </div>
+        
+                <div class="footer__right">
+                    <ul class="footer__social-links">
+                        <span class="footer__title">Ссылки</span>
+                        <li class="footer__link">
+                            <a href="../../pages/blog/blog"">Блог</a>
+                            </li>
+                            <li class=" footer__link">
+                                <a href="../../pages/verstka/verstka">Вёртска</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="../../pages/cat/cat"">Кот</a>
+                            </li>
+                        </ul>
+        
+                        <ul class=" footer__social-links" id="socialLinks">
+                                <span class="footer__title">Контакты</span>
+                        <li class="footer__link">
+                            <a href="https://t.me/MrMeows" target="_blank">Telegram</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="mailto:chingizgc@gmail.com">Gmail</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="https://steamcommunity.com/id/chizx/" target="_blank">Steam</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/stats_users.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../js/cat_modal.js"></script>
+    <script src="../../js/link__dropdown.js"></script>
+
+</body>
+
+</html>

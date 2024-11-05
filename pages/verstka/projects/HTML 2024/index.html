@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 2024</title>
+    <link rel="icon" href="./img/favicon.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="header__logo"> </div>
+                <div class="header__info">
+                    <h1 class="header__title">Имя<br> Фамилия</h1>
+                    <span class="header__text">фрилансер, веб-разработчик,<br> создание сайтов</span>
+                    <div class="header__btns">
+                        <a href="#portfolio" class="btn btn__background-black">Портфолио</a>
+                        <a href="#contacts" class="btn">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <section class="portfolio" id="portfolio">
+                <h2 class="portfolio__title">Портфолио</h2>
+                <div class="portfolio__card">
+                    <img src="./img/main/portfolio/project-01.jpg" alt="" class="portfolio__img">
+                    <a href="./page/mebel.html" class="portfolio__link">Сайт магазина мебели</a>
+                </div>
+                <div class="portfolio__card">
+                    <img src="./img/main/portfolio/project-02.jpg" alt="" class="portfolio__img">
+                    <a href="./page/turist.html" class="portfolio__link">Сайт туристического агентства</a>
+                </div>
+                <div class="portfolio__card">
+                    <img src="./img/main/portfolio/project-03.jpg" alt="" class="portfolio__img">
+                    <a href="./page/complecs.html" class="portfolio__link">Сайт жилого комплекса</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__up">
+                <h2 class="footer__title" id="contacts">Контакты</h2>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">
+                        <img class="footer__img" src="./img/footer/telegram.svg" alt="">
+                        <span>Написать в Telegram</span>
+                    </a>
+                    <a href="#" class="footer__link footer__link-center">
+                        <img class="footer__img" src="./img/footer/whatsapp.svg" alt="">
+                        <span>Отправить в WhatsApp</span>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <img class="footer__img" src="./img/footer/vk.svg" alt="">
+                        <span>Связаться Вконтакте</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__down">
+                <p>© Юрий Ключевский</p>
+                <p>HTML верстальщик, создание сайтов Москва</p>
+                <br>
+                <span>💻 Макет сверстан на курсе в ВебКадеми</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

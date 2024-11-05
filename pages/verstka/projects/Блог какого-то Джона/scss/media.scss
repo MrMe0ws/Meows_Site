@@ -1,0 +1,220 @@
+@media (max-width: 910px) {
+    .left_title h1 {
+        font-size: 32px;
+    }
+
+    .work_line {
+        width: auto;
+    }
+
+
+    .header_conteiner {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.356);
+        margin-right: 10px;
+    }
+
+
+
+    .nav_mobile {
+        margin: 10px 10px;
+    }
+
+    .header_borders {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 30px;
+
+        cursor: pointer;
+
+        .header_border {
+            border-bottom: 2px solid #21243D;
+        }
+    }
+
+    // 
+
+    /* Выпадающий контейнер */
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    /* Кнопка выпадающего списка */
+    .dropdown .dropbtn {
+        background-color: inherit;
+        font-family: inherit;
+        /* Важно для вертикального выравнивания на мобильных телефонах */
+        margin: 0;
+        /* Важно для вертикального выравнивания на мобильных телефонах */
+    }
+
+    /* Добавить красный цвет фона для ссылок на навигационную панель при наведении курсора */
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgba(238, 238, 238, 0.418);
+        border-radius: 10%;
+        transition: 0.5s;
+    }
+
+    /* Выпадающее содержимое (скрыто по умолчанию) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        max-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav_header {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+
+
+        .header_link {
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: right;
+        }
+    }
+
+    /* Ссылки внутри выпадающего списка */
+    .dropdown-content a {
+        float: none;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Добавить серый цвет фона для выпадающих ссылок при наведении курсора */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+
+    }
+
+    /* Показать выпадающее меню при наведении курсора */
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+
+
+    // 
+
+    .header {
+        position: static;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+    }
+
+
+
+    .circle {
+        width: 180px;
+        height: 180px;
+        background-size: 180px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .section {
+        margin: 80px 0 71px 0;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-direction: column-reverse;
+        gap: 25px;
+
+        h1 {
+            text-align: center;
+            margin: 0 32px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 0 25px;
+        }
+
+        .left_button {
+            margin: 0 auto;
+        }
+    }
+
+    .info {
+        margin: 0 10px;
+    }
+
+    .article_blue {
+        width: auto;
+    }
+
+    .conteiner_title {
+        justify-content: center;
+
+        button {
+            display: none;
+        }
+
+        span {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .section2 {
+        width: auto;
+    }
+
+    .conteiner_info {
+        flex-direction: column;
+    }
+
+    .info_title {
+        font-size: 22px;
+    }
+
+    .info_figma {
+        font-size: 16px;
+    }
+
+    .conteiner_work {
+        flex-direction: column;
+        margin: 0 18px;
+
+    }
+
+    .title_featured {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .work_title {
+        font-size: 24px;
+    }
+
+    .date_border,
+    .data_name {
+        font-size: 18px;
+    }
+
+
+
+}

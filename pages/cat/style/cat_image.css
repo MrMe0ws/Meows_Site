@@ -1,0 +1,126 @@
+/* CAT IMAGE */
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+  width: 100%; /* изображение займет всю доступную ширину родительского контейнера */
+  max-width: 200px; /* ограничиваем максимальную ширину */
+  height: 200px; /* автоматическая высота, сохраняющая пропорции изображения */
+  margin: 0 auto; /* добавляем отступы и центрируем */
+  display: block; /* чтобы изображение занимало всю строку и было центрировано */
+  border-radius: 5px; /* скругление углов для приятного вида */
+  transition: 0.3s; /* добавляем плавный переход при наведении */
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.myImg:hover {
+  opacity: 0.7; /* полупрозрачность при наведении */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный черный фон */
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Content (Image) */
+.modal-content-cat {
+  margin: auto;
+  display: block;
+  max-width: 90%; /* Максимальная ширина для изображений */
+  max-height: 80%; /* Максимальная высота для изображений */
+  object-fit: contain; /* Сохраняем пропорции изображений */
+  border-radius: 30px;
+  position: absolute; /* Абсолютное позиционирование */
+  top: 50%; /* Сдвиг вниз на 50% */
+  left: 50%; /* Сдвиг вправо на 50% */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Центрирование изображения по горизонтали и вертикали */
+  transition: opacity 0.3s ease;
+}
+
+/* Caption of Modal Image (Image Text) */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 10px; /* Отступ от нижней границы */
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content-cat,
+#caption {
+    animation: zoom 0.5s ease-out;
+    transform-origin: center;
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes zoom {
+    0% {
+        /* transform: scale(0); */
+        opacity: 0;
+    }
+    100% {
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #e9e1e1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 2; /* добавьте этот стиль, чтобы кнопка всегда была сверху */
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 744px) {
+  .myImg {
+    max-width: 100%; /* изображение будет занимать всю ширину экрана на маленьких устройствах */
+    margin: 0; /* уменьшаем отступы */
+  }
+
+  .cat-albom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+
+  .modal-content-cat {
+    width: 100%;
+  }
+}

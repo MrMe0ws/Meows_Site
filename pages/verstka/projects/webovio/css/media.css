@@ -1,0 +1,22 @@
+@media (min-width: 1441px) { 
+.get-started {
+    background-color: #FAFAFA;
+    position: relative;
+    top: 180px;
+    max-width: 1785px;
+    height: 362px;
+    padding: 70px 289px 71px 164px;
+}
+}
+
+@media (min-width: 1981px) { 
+.get-started {
+    background-color: #FAFAFA;
+    position: relative;
+    top: 180px;
+    max-width: 2200px;
+    height: 362px;
+    padding: 70px 289px 71px 164px;
+}
+}
+
